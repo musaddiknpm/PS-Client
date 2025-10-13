@@ -51,8 +51,8 @@ type ClientOpts = {
 	 */
 	scrollback?: boolean;
 	/**
-	 * Dictates whether messages throw errors by default. Set to 'false' to enable messages throwing errors.
-	 * @default true
+	 * Dictates whether messages throw errors by default. Set to 'true' to enable messages throwing errors.
+	 * @default false
 	 */
 	noFailMessages?: boolean;
 	/**
@@ -65,13 +65,13 @@ type ClientOpts = {
 	/**
 	 * The time, in milliseconds, that your Bot will wait before attempting to login again after failing.
 	 * If this is 0, it will not attempt to login again.
-	 * @default 10_000
+	 * @default 4_000
 	 */
 	retryLogin?: number;
 	/**
 	 * The time, in milliseconds, that your Bot will wait before attempting to reconnect after a disconnect.
 	 * If this is 0, it will not attempt to reconnect.
-	 * @default 30_000
+	 * @default 5_000
 	 */
 	autoReconnect?: number;
 	/**
