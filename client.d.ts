@@ -51,7 +51,7 @@ type ClientOpts = {
 	 */
 	scrollback?: boolean;
 	/**
-	 * Dictates whether messages throw errors by default. Set to 'false' to enable messages throwing errors.
+	 * Dictates whether messages throw errors by default. Set to 'true' to enable messages throwing errors.
 	 * @default false
 	 */
 	noFailMessages?: boolean;
