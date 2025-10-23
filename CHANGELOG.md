@@ -1,5 +1,11 @@
 ## What's New
 
+**v5.2.0**
+
+- Supports the new `Species#isCosmeticForme` prop on Pokédex Species.
+- Fixes some JSDoc default value mismatches. [#37](https://github.com/PartMan7/PS-Client/pull/37) by [@singiamtel](https://github.com/singiamtel)
+- Removes the unused dotenv dependency. [#38](https://github.com/PartMan7/PS-Client/pull/38) by [@singiamtel](https://github.com/singiamtel)
+
 **v5.1.2**
 
 - Checks `null` cases for `Client.status` in methods like `Client#send` when the client might be forcefully disconnected.
