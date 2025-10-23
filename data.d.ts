@@ -301,6 +301,7 @@ export type Species = {
 	baseSpecies?: string;
 	forme?: string;
 	baseForme?: string;
+	isCosmeticForme?: boolean;
 	cosmeticFormes?: string[];
 	otherFormes?: string[];
 	formeOrder?: string[];

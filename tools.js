@@ -143,6 +143,12 @@ exports.update = function update(...types) {
 				const data = JSON.parse(json);
 				Object.values(data).forEach(pokemon => {
 					pokemon.id = toID(pokemon.name);
+					if (pokemon.isCosmeticForme) {
+						const baseMon = data[toID(pokemon.baseSpecies)];
+						for (const key in baseMon) {
+							if (!(key in pokemon)) pokemon[key] = baseMon[key];
+						}
+					}
 					pokemon.bst = Object.values(pokemon.baseStats).reduce((a, b) => a + b, 0);
 
 					if (!pokemon.gen && pokemon.num >= 1) {
