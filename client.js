@@ -16,6 +16,7 @@ const Data = require('./data.js');
 class Client extends EventEmitter {
 	constructor(opts = {}) {
 		super();
+		require('./check-update.js').updateIfNeeded();
 		this.opts = {
 			server: 'sim3.psim.us',
 			serverid: 'showdown',
